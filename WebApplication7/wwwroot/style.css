@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+  /*   يخلي الهيدر ثابت لمن تسوي سكرول لتحت*/
+  width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    /*يسوي مسافه بينهم */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px; 
+    padding-right: 100px;
+    height: 8%;
+
+}
+
+.logo {
+    /*يشيل الخط تحت الاسم او النص*/
+    text-decoration: none;
+    color: rgb(255, 95, 109) ;
+    /*تحويل الحروف الى كابتل*/
+    text-transform: uppercase;
+    font-weight: 500;
+    font: size 1.8em;
+      
+}
+
+
+
+.navgation .lp{
+    /*  هنا تحط a عشان تحدد اللي بتغيره  */
+    /* يتغير خصائصه ولونهaاو النص في كل */
+    
+    text-decoration: none;
+    font: size 1.0em;
+    font-weight: 300;
+    padding-left: 30px;
+    display: inline-block;
+    padding: 10px 23px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 17px;
+}
+.navgation a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif ;
+    color: rgb(163, 163, 165);
+    font-family: 18px;
+    letter-spacing: 0.5px;
+    padding:0 10px ;
+}
+.navgation a:after{
+    content: "";
+    position: absolute;
+    background-color:rgb(255, 95, 109);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    bottom: 0;
+}
+.navgation a:hover:after{
+    width: 100%;
+
+}
+
+
+.navgation a:hover{
+    color: rgb(255, 255, 255);
+}
+.main h3{
+    font-size: 15;
+    color: black;
+    font-weight: 700;
+}
+.main h1{
+    margin-top: 10px;
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+} 
+.main h3{
+    
+    color: rgb(255, 95, 109);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20;
+}
+.main{
+    
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed; 
+}
+
+
+.ma{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background:rgba(0, 0, 0, 0);
+    padding-bottom: 370px;
+   
+    
+    
+    
+}
+.main .pd  {
+    size: 1em;
+    padding-left: 230px ;
+    
+}
+
+
+
+.mainbtn{
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(255, 95, 109);
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+     border-radius: 15px;
+     margin-bottom: 30px;
+     transition: 0.7s ease;
+}
+.mainbtn:hover{
+   color:black;
+ transform: scale(1.1);
+ background-color:rgb(255, 195, 113);
+}
+.social-icons a{
+  color: white;
+  font-size: 1.7em;
+  padding-right: 25px;
+}
+.social-icons i:before .social-icons i:after{
+    content: "";
+    
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 4px solid;
+    left: 0;
+    top: 0;
+    transition: 4s linear;
+}
+.social-icons i:hover{
+    transform: scale(.8);
+    
+}
+.social-icons i:hover:before{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-10px);
+    
+}
+
+
+.icon i{
+    color: blue;
+}
+
+
+.cards{
+    background-color: black;
+
+}
+.cards{
+    padding-top: 50px;
+}
+
+.title{  
+    display: flex;
+    color : rgb(255, 95, 109);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom :30px; 
+    letter-spacing: 3px;
+ 
+}
+
+
+.contect{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+background-color:white;
+width: 21.25em;
+box-shadow: 0 5px 25px rgba(1 1 1/20%);
+border-radius: 35px;
+padding: 25px ;
+margin: 16px;
+transition: 0.7s ease;
+
+}
+.card:hover {
+    transition: 0.7s ease;
+    transform: scale(1.1);
+}
+.icon{
+  color: white;
+  font-size: 8em;
+  text-align: center;
+}
+.info{
+    text-align: center;
+
+}
+.info h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    margin-top: 30px;
+    background-color:black;
+}
+
+.projects .contect{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;  
+}
+.project-card:hover{
+    transform: scale(1.1) ;
+}
+
+.project-card:hover .project-image{
+    opacity:0.9 ;
+}
+.project-image img{
+   width: 100%; 
+}
+.project-info{
+padding: 1em;
+}
+.project-cat{
+    font-size: 0.8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight:800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: blueviolet;
+}
+.more-details:hover{
+    color: darkmagenta;
+}
+.contect .icon{
+font-size: 4.5em ;
+}
+.contect .info h3{
+    color: black;
+}
+.contect .info p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: white;
+    color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+     
+}
+.footer title{
+font-size: 1.3em;
+font-weight: 600;
+}
+
+.footer-title span{
+    color: darkblue;
+    font-weight: 600;
+}
+.footer .social-icons a{
+    font-size: 1.2em;
+    padding: 0 12px 0 0;
+    color: black;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navgation a{
+      padding-left: 10px;
+    }
+ .title{
+    font-size: 1.8em;
+ }
+
+ section{
+ padding: 80px 20px;
+ }
+
+ .main-content h2{
+    font-size: 1em;
+ }
+ .main-content h3{
+    font-size: 1.6em;
+ }
+
+ .contect{
+flex-direction: column;
+align-items: center;
+ }
+ 
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+ }
+
+ @media (max-width: 300px){
+  body{
+    font-size: 10px;
+  }
+ }
